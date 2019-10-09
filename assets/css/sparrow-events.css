@@ -1,6 +1,12 @@
 .bg-roxo{
     background-color: #563d7c;
 }
-img{
+.imgCadastro{
     width: 150px;
 }
+.imgEvento-detalhar{
+    width: 500px;
+    height: 500px;
+}
+
+
