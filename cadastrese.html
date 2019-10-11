@@ -8,113 +8,100 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
   <link rel="stylesheet" href="assets/css/sparrow-events.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
 
   <title>Sparrow events - Cadastre-se</title>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-roxo">
-    <a class="navbar-brand" href="index.html">Sparrow events</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item ">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Cadastre-se</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Eventos
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Acontecendo</a>
-            <a class="dropdown-item" href="#">Previstos</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Encerrados</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <h1>Seja bem vindo!</h1>
-        <p>Realize seu Cadastro</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <fieldset>
-          <legend>Dados Pessoais</legend>
-          <div class="row">
-            <div class="col-sm-3">
-              <img class="imgCadastro" src="assets/img/pessoa.png" alt="">
-            </div>
-            <div class="col-sm-9">
-              <div class="form-group row">
-                <label for="nome">Nome</label>
-                <input type="text" class="form-control" id="nome" value="">
-              </div>
-              <div class="form-group row">
-                <label for="data">Data Nascimento</label>
-                <input type="date" class="form-control" id="dataNascimento" value="">
-              </div>
-              <div class="form-group">
-                <label>Sexo</label>
-                <div class="custom-control custom-radio">
-                  <input type="radio" id="customRadioMasculino" name="radioSexo" class="custom-control-input">
-                  <label class="custom-control-label" for="customRadioMasculino">Masculino</label>
-                </div>
-                <div class="custom-control custom-radio">
-                  <input type="radio" id="customRadioFeminino" name="radioSexo" class="custom-control-input">
-                  <label class="custom-control-label" for="customRadioFeminino">Feminino</label>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="data">Formação</label>
-                <select class="form-control" id="selectFormacao">
-                  <option>Ensino fundamental</option>
-                  <option>Ensino medio</option>
-                  <option>Ensino superior</option>
-                </select>
-                <label for="data">Profissão</label>
-                <select class="form-control" id="proficao">
-                  <option>Analista de sistemas</option>
-                  <option>Dev frontend </option>
-                  <option>Dev backend</option>
-                  <option>Dev Fulstrep</option>
-                </select>
-              </div>
-              <div class="form-group row">
-                <label for="text">CPF</label>
-                <input type="text" class="form-control" id="CPF" value="">
-              </div>
-            </div>
-        </fieldset>
-      </div>
-    </div>
-  </div>
-  <footer class="footer mt-auto py-3">
+<body class="bg-secondary">
+  <section class="py-5">
     <div class="container">
-      <span class="text-muted">Coloque o conteúdo do sticky footer aqui.</span>
+      <div class="row">
+        <!--#region coluna 01-->
+        <div class="col-sm-4 bg-roxo text-white text-center py-5">
+          <div class="card-body">
+            <img src="http://www.ansonika.com/mavia/img/registration_bg.svg" alt="">
+            <h2 class="py-3">Cadastre-se</h2>
+            <p>
+              Venha fazer parte do clube de eventos Sparrow e ganhe descontos exclusivos!
+            </p>
+          </div>
+        </div>
+        <!--#endregion-->
+
+        <!--#region coluna 02-->
+        <div class="col-sm-8 py-5 border bg-white">
+          <h4>Cadastre-se</h4>
+          <form>
+            <div class="form-row">
+              <div class="form-group col-sm-6">
+                <label for="inputNomeCompleto">Nome Completo</label>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-user-plus"></i> alt=""></span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                    aria-describedby="basic-addon1">
+                </div>
+              </div>
+              <div class="form-group col-sm-6">
+                <label for="InputEmail">Email</label>
+                <input type="email" class="form-control" id="InputEmail">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-sm-6">
+                <label for="InputTelefone">Telefone</label>
+                <input type="tel" class="form-control" id="InputTelefone">
+              </div>
+              <div class="form-group col-sm-6">
+                <label for="RadioSexo">Sexo</label>
+                <div class="py-2">
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="RadioMasculino" name="RadioSexo" class="custom-control-input">
+                    <label class="custom-control-label" for="RadioMasculino">Masculino</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="RadioFeminino" name="RadioSexo" class="custom-control-input">
+                    <label class="custom-control-label" for="RadioFeminino">Feminino</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-sm-12">
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Nos diga que tipo de evento voce gosta mais.</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-sm-12">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Deseja receber emails promocionais de novos
+                    eventos?</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-sm-12">
+                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false"
+                  autocomplete="off">
+                  Enviar
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--#endregion-->
+      </div>
     </div>
-  </footer>
+  </section>
+
 
 
   <!-- Optional JavaScript -->
