@@ -1,0 +1,4 @@
+
+function ocultarDiv() {
+  $(".loginSenha").hide();
+}
