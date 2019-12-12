@@ -1,0 +1,30 @@
+{
+    "name": "senai/sparrow",
+    "description": "site de inscricao de eventos",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ThecioRibeiro",
+            "email": "55919924+ThecioRibeiro@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+
+    "config":{
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "source\\": "source/"
+        },
+        "files": [
+            "source/config.php"
+        ]
+    },
+
+    "require": {
+        "phpmailer/phpmailer": "dev-master"
+    }
+
+    
+}

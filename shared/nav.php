@@ -59,7 +59,7 @@
                 <div class="col-sm-12">
                   <div class="form-group">
                     <label for="loginSenha">Senha</label>
-                    <input  name="loginSenha" type="password" class="form-control" required>
+                    <input id="loginSenha" name="loginSenha" type="password" class="form-control" required>
                   </div>
                 </div>
               </div>

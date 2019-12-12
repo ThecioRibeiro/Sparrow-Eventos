@@ -1,3 +1,6 @@
+<?php
+require_once realpath(dirname(__FILE__).'/source/models/EmailModel.php');
+?>
 <!doctype html>
 <html lang="pt-br" class="h-100">
 
@@ -16,7 +19,8 @@
   </div>
   <main role="main" class="flex-shrink-0 mb-5">
     <div class="container">
-      <form class="needs-validation" novalidate>
+      <form id="formContato" method="POST" class="needs-validation" novalidate>
+        <input type="hidden" name="formContato" value="contato">
         <div class="row">
           <div class="col-sm-12">
             <fieldset>
