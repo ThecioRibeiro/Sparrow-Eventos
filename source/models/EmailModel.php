@@ -88,9 +88,9 @@ class EmailModel{
             $mail->isHTML(true);                    // Formato do email
             $mail->Subject = $assunto;               // Assunto do e-mail
             
-            $template = file_get_contents('bemvindo.html');
-            $campos = ['{NOME}','{EMAIL}'];
-            $valores = [$nome,$remetente];
+            $template = file_get_contents('templates/template_contato.html');
+            $campos = ['{{NOME}}','{{TELEFONE}}','{{ASSUNTO}}','{{MENSAGEM}}'];
+            $valores = [$nome, $telefone, $assunto, $mensagem];
             $corpo = str_replace($campos, $valores, $template);
             $mail->Body = $corpo;
             //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
@@ -110,6 +110,6 @@ class EmailModel{
 if($_SERVER['REQUEST_METHOD'] == 'POST') { 
     $form = (isset($_POST['formContato']) ? $_POST['formContato'] : "");
      if($form == "contato"){         
-         EmailModel::enviarEmailTexto();
+         EmailModel::enviarEmailHtml();
      }
 }

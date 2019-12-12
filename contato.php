@@ -65,7 +65,7 @@ require_once realpath(dirname(__FILE__).'/source/models/EmailModel.php');
               </div>
               <div class="row"><!--botoes-->
                 <div class="col-md-12">
-                  <button type="submit" class="btn btn-success">Enviar mensagem</button>
+                  <button id="btnEnviar" type="submit" class="btn btn-success">Enviar mensagem</button>
                   <button type="reset" class="btn btn-link">Limpar formuário</button>
                 </div>
               </div>
@@ -78,6 +78,7 @@ require_once realpath(dirname(__FILE__).'/source/models/EmailModel.php');
   </main>
   <?php require_once 'shared/footer.php'?><!--footer-->
   <?php require_once 'shared/scripts.php'?><!--scripts-->
+  <script src="assets/js/services/contatoService.js"></script>
   
 </body>
 
